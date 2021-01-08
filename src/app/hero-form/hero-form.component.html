@@ -1,0 +1,7 @@
+<form [formGroup]="formGroup" (submit)="onSubmit()">
+    <label for="name">
+        Name:
+        <input type="text" id="name" formControlName="name">
+    </label>
+    <button type="submit">Save</button>
+</form>

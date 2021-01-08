@@ -1,0 +1,14 @@
+<div *ngIf="hero">
+    <form #form="ngForm" (ngSubmit)="update()">
+        <h2>{{hero.name | uppercase}} details</h2>
+        <div><span>{{hero.id}} </span>{{hero.name}}</div>
+        <div>
+            <label>Name:
+                <input [(ngModel)]="hero.name" type="text" name="name" placeholder="name" />
+            </label>
+        </div>
+
+        <button type="submit">Update</button>
+        <button type="button" (click)="goBack()">Back</button>
+    </form>
+</div>
